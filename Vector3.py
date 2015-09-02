@@ -43,7 +43,7 @@ class Vector3:
         return Vector3(matrix[0][0], matrix[0][1], matrix[0][2])
 
     def cross_product(self, other):
-        crossX = self.y * other.z - (self.z * other.z)
+        crossX = self.y * other.z - (self.z * other.y)
         crossY = self.z * other.x - (self.x * other.z)
         crossZ = self.x * other.y - (self.y * other.x)
 
